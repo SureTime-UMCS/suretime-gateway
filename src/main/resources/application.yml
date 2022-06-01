@@ -17,11 +17,7 @@ spring:
       - id: suretime-service
         uri: lb://SURETIME-SERVICE
         predicates:
-        - Path=/person/**
-      - id: auth-service
-        uri: lb://AUTH-SERVICE
-        predicates:
-        - Path=/auth/**
+        - Path=/api/v1/**
 
 server:
   port: 8989
